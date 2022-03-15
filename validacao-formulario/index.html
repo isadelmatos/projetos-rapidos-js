@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <label for="email">Nome</label>
+            <input type="text" id="nome" placeholder="Nome completo">
+            <p class="erro-obrigatorio esconder">Nome obrigatório.</p>
+
+            <label for="email">Email</label>
+            <input id="email" placeholder="Email">
+            <p class="erro-obrigatorio esconder">Email obrigatório.</p>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone">
+            <p class="erro-obrigatorio esconder">Telefone obrigatório.</p>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem"></textarea>
+            <p class="erro-obrigatorio esconder">Mensagem obrigatória.</p>
+
+            <hr>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div>
+            <p id="mensagemEnviada" class="esconder">Mensagem enviada com sucesso!</p>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
